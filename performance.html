@@ -1,0 +1,3045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="market.html">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="performance.html">
+    <link rel="stylesheet" href="contact.html">
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+
+</head>
+
+<style>
+  .div {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-2 {
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+    }
+    img{margin-bottom: 10px;}
+
+  }
+  .div-3 {
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      max-width: 100%;
+    }
+  }
+  .div-4 {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 1278px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .img {padding-left: -4rem;}
+  }
+  .img {
+    aspect-ratio: 2.51;
+    object-fit: cover;
+    object-position: center;
+    width: 88px;
+    overflow: hidden;
+    align-self: start;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  .div-5 {
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    width: 369px;
+    max-width: 100%;
+    gap: 20px;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-5 {
+      justify-content: center;
+    }
+  }
+  .div-6 {
+    color: #2770fe;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: stretch;
+  }
+  .div-7 {
+    color: #272742;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: stretch;
+  }
+  .div-8 {
+    color: #272742;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: stretch;
+  }
+  .div-9 {
+    color: #272742;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: stretch;
+  }
+  .div-10 {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 0.938rem;
+    font-weight: 600;
+    line-height: 99.947%;
+    align-items: flex-start;
+    border-radius: 0.25rem;
+    background-color: #111;
+    align-self: stretch;
+    width: 194px;
+    max-width: 100%;
+    padding: 13px 20px;
+  }
+  .div-11 {
+    background-color: #070622;
+    background-image: url("/img/Affiliate%20hero%20section.svg");
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 125px 20px 140px;
+  }
+  @media (max-width: 991px) {
+    .div-11 {
+      max-width: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  .div-12 {
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 4.6875rem;
+    align-self: center;
+    max-width: 963px;
+  }
+  @media (max-width: 991px) {
+    .div-12 {
+      max-width: 100%;
+    }
+  }
+  .div-13 {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 180%;
+    align-self: center;
+    margin-left: -20px;
+    width: 1082px;
+    max-width: 1033px;
+  }
+  @media (max-width: 991px) {
+    .div-13 {
+      max-width: 100%;
+    }
+  }
+  .div-14 {
+  
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 0.375rem;
+    align-self: center;
+    display: flex;
+    width: 820px;
+    
+    gap:0 px;
+    margin: 88px 0 -28px;
+  }
+  @media (max-width: 991px) {
+    .div-14 {
+      flex-wrap: wrap;
+      margin: 40px 0 10px;
+    }
+    .div-15{visibility: hidden;}
+    .div-16{width:10rem}
+  }
+  .div-15 {
+    color: #1a7bff;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    align-self: center;
+    margin: auto 0;
+  }
+  .div-16 {
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a7bff;
+    align-self: stretch;
+    width: 210px;
+    max-width: 100%;
+    padding: 21px 20px;
+  }
+  .div-17 {
+    align-self: center;
+    margin-top: 55px;
+    width: 100%;
+    max-width: 1258px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-17 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-18 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-18 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 63%;
+    margin-left: 3rem;
+  }
+  @media (max-width: 991px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .div-19 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: auto -52px auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-19 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-20 {
+    justify-content: center;
+    color: #171717;
+    font-family: Poppins, sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    align-self: start;
+  }
+  @media (max-width: 991px) {
+    .div-20 {
+      max-width: 100%;
+    }
+  }
+  .div-21 {
+    justify-content: center;
+    color: #636363;
+    font-family: Poppins, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    align-self: start;
+    margin-top: 12px;
+    max-width: 714px;
+    line-height: 2rem;
+  }
+  @media (max-width: 991px) {
+    .div-21 {
+      max-width: 100%;
+    }
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 37%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-2 {
+      width: 100%;
+      
+    }
+  }
+  .img-2 {
+    aspect-ratio: 1.07;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .img-2 {
+      max-width: 100%;
+      width: 18.4375rem;
+height: 17.3125rem;
+    }
+  }
+  .div-22 {
+    align-self: stretch;
+    display: flex;
+    margin-top: 129px;
+    width: 100%;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-22 {
+      max-width: 100%;
+      margin-top: 40px;
+      
+    }
+  }
+  .div-23 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-23 {
+      max-width: 100%;
+    }
+  }
+  .div-24 {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 1223px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-24 {
+      max-width: 100%;
+    }
+  }
+  .div-25 {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    width: 848px;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .div-26 {
+    color: #171717;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    max-width: 700px;
+    align-self: center;
+  }
+  @media (max-width: 991px) {
+    .div-26 {
+      max-width: 100%;
+    }
+  }
+  .div-27 {
+    color: var(--63657-e, #63657e);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 500;
+    align-self: stretch;
+    margin: 12px -20px 0 0;
+  }
+  @media (max-width: 991px) {
+    .div-27 {
+      max-width: 100%;
+    }
+  }
+  .div-28 {
+    align-self: stretch;
+    margin-top: 54px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-28 {
+      max-width: 100%;
+      margin-top: 40px;
+      
+    }
+  }
+  .div-29 {
+    gap: 20px;
+    display: flex;
+    
+  }
+  @media (max-width: 991px) {
+    .div-29 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 52%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-3 {
+      width: 100%;
+      
+    }
+  }
+  .div-30 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-30 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-31 {
+    justify-content: center;
+    align-items: flex-start;
+    align-self: start;
+    display: flex;
+    width: 587px;
+    max-width: 100%;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-31 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-32 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-3 {
+    aspect-ratio: 0.98;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .div-33 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-33 {
+      max-width: 100%;
+    }
+  }
+  .div-34 {
+    color: #272727;
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 165.447%;
+    letter-spacing: -0.00225rem;
+    max-width: 270px;
+    align-self: start;
+  }
+  .div-35 {
+    color: var(--paragraph-txt-color, #565656);
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  @media (max-width: 991px) {
+    .div-35 {
+      max-width: 100%;
+    }
+  }
+  .div-36 {
+    justify-content: center;
+    align-self: start;
+    margin-top: 128px;
+    width: 608px;
+    max-width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-36 {
+      margin-top: 40px;
+    }
+  }
+  .div-37 {
+    gap: 20px;
+    display: flex;
+    
+  }
+  @media (max-width: 991px) {
+    .div-37 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-4 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 16%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-4 {
+      width: 100%;
+    }
+  }
+  .div-38 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: auto 0;
+    
+    
+  }
+  @media (max-width: 991px) {
+    .div-38 {
+      margin-top: 24px;
+    }
+  }
+  .img-4 {
+    aspect-ratio: 0.98;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .column-5 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 84%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-5 {
+      width: 100%;
+    }
+  }
+  .div-39 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-39 {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .div-40 {
+    color: #272727;
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 165.447%;
+    letter-spacing: -0.00225rem;
+  }
+  .div-41 {
+    color: var(--paragraph-txt-color, #565656);
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  @media (max-width: 991px) {
+    .div-41 {
+      max-width: 100%;
+    }
+  }
+  .column-6 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 48%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-6 {
+      width: 100%;
+    }
+  }
+  .div-42 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-42 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-43 {
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-43 {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .div-44 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-5 {
+    aspect-ratio: 0.98;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .div-45 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-45 {
+      max-width: 100%;
+    }
+  }
+  .div-46 {
+    color: #272727;
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 165.447%;
+    letter-spacing: -0.00225rem;
+  }
+  .div-47 {
+    color: var(--paragraph-txt-color, #565656);
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  @media (max-width: 991px) {
+    .div-47 {
+      max-width: 100%;
+    }
+  }
+  .div-48 {
+    justify-content: center;
+    align-self: stretch;
+    margin-top: 128px;
+  }
+  @media (max-width: 991px) {
+    .div-48 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-49 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-49 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-7 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 17%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-7 {
+      width: 100%;
+    }
+  }
+  .div-50 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-50 {
+      margin-top: 24px;
+    }
+  }
+  .img-6 {
+    aspect-ratio: 0.98;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .column-8 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 83%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-8 {
+      width: 100%;
+    }
+  }
+  .div-51 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-51 {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .div-52 {
+    color: #272727;
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 165.447%;
+    letter-spacing: -0.00225rem;
+  }
+  .div-53 {
+    color: var(--paragraph-txt-color, #565656);
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  @media (max-width: 991px) {
+    .div-53 {
+      max-width: 100%;
+    }
+  }
+  .div-54 {
+    background-color: #eefbff;
+    align-self: stretch;
+    display: flex;
+    margin-top: 165px;
+    width: 100%;
+    padding-bottom: 6rem;
+    flex-direction: column;
+    
+  }
+  @media (max-width: 991px) {
+    .div-54 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .img-7 {
+    aspect-ratio: 0.93;
+    object-fit: cover;
+    object-position: center;
+    width: 258px;
+    overflow: hidden;
+    align-self: start;
+    max-width: 100%;
+  }
+  .div-55 {
+    align-self: center;
+    z-index: 1;
+    display: flex;
+    margin-top: -203px;
+    width: 100%;
+    max-width: 1256px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-55 {
+      max-width: 100%;
+      margin-top: -200px;
+    }
+  }
+  .div-56 {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 1039px;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-56 {
+      max-width: 100%;
+    }
+  }
+  .div-57 {
+    color: #272742;
+    font-family: Roboto, sans-serif;
+    font-size: 1.99875rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    .div-57 {
+      max-width: 100%;
+    }
+  }
+  .div-58 {
+    color: var(--63657-e, #63657e);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 500;
+    align-self: stretch;
+    margin-top: 22px;
+  }
+  @media (max-width: 991px) {
+    .div-58 {
+      max-width: 100%;
+    }
+  }
+  .img-8 {
+    aspect-ratio: 1.26;
+    object-fit: cover;
+    object-position: center;
+    width: 545px;
+    overflow: hidden;
+    align-self: end;
+    margin-top: 56px;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .img-8 {
+      margin-top: 40px;
+    }
+  }
+  .div-59 {
+    align-items: flex-start;
+    align-self: start;
+    display: flex;
+    width: 619px;
+    max-width: 100%;
+    flex-direction: column;
+    margin: -481px 0 0 94px;
+    line-height: 1.5rem;
+  }
+  @media (max-width: 991px) {
+    .div-59 {
+      margin-top: -200px;
+    }
+  }
+  .div-60 {
+    align-self: stretch;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-60 {
+      max-width: 100%;
+    }
+  }
+  .div-61 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-61 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-9 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 13%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-9 {
+      width: 100%;
+    }
+  }
+  .div-62 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-62 {
+      margin-top: 40px;
+    }
+  }
+  .img-9 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .column-10 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 87%;
+    padding-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-10 {
+      width: 100%;
+    }
+  }
+  .div-63 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-63 {
+      max-width: 100%;
+      margin-top: 36px;
+    }
+  }
+  .div-64 {
+    color: #272727;
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 165.447%;
+    letter-spacing: -0.00225rem;
+  }
+  .div-65 {
+    color: var(--paragraph-txt-color, #565656);
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 5px;
+    line-height: 1.5rem;
+  }
+  @media (max-width: 991px) {
+    .div-65 {
+      max-width: 100%;
+    }
+  }
+  .div-66 {
+    align-self: stretch;
+    margin-top: 39px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-66 {
+      max-width: 100%;
+      margin-right: 7px;
+    }
+  }
+  .div-67 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-67 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-11 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 13%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-11 {
+      width: 100%;
+    }
+  }
+  .div-68 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-68 {
+      margin-top: 40px;
+    }
+  }
+  .img-10 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .column-12 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 87%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-12 {
+      width: 100%;
+    }
+  }
+  .div-69 {
+    align-items: flex-start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-69 {
+      max-width: 100%;
+      margin-top: 36px;
+    }
+  }
+  .div-70 {
+    color: #272727;
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 165.447%;
+    letter-spacing: -0.00225rem;
+  }
+  .div-71 {
+    color: var(--paragraph-txt-color, #565656);
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 5px;
+    line-height: 1.5rem;
+  }
+  @media (max-width: 991px) {
+    .div-71 {
+      max-width: 100%;
+    }
+  }
+  .div-72 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    margin-top: 39px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-72 {
+      max-width: 100%;
+      margin-right: 7px;
+      flex-wrap: wrap;
+    }
+  }
+  .div-73 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .img-11 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .div-74 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  @media (max-width: 991px) {
+    .div-74 {
+      max-width: 100%;
+    }
+  }
+  .div-75 {
+    color: #272727;
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 165.447%;
+    letter-spacing: -0.00225rem;
+  }
+  .div-76 {
+    color: var(--paragraph-txt-color, #565656);
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  @media (max-width: 991px) {
+    .div-76 {
+      max-width: 100%;
+    }
+  }
+  .div-77 {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    margin-top: 165px;
+    width: 100%;
+    max-width: 1157px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-77 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-78 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-78 {
+      max-width: 100%;
+    }
+  }
+  .div-79 {
+    color: #262626;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 122.141%;
+    letter-spacing: -0.04rem;
+    align-self: center;
+    max-width: 751px;
+  }
+  @media (max-width: 991px) {
+    .div-79 {
+      max-width: 100%;
+    }
+  }
+  .div-80 {
+    color: #636363;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 500;
+    align-self: center;
+    width: 100%;
+    margin: 24px 0 0 -20px;
+  }
+  @media (max-width: 991px) {
+    .div-80 {
+      max-width: 100%;
+    }
+  }
+  .div-81 {
+    align-self: stretch;
+    margin-top: 84px;
+    padding: 0 20px;
+  }
+  @media (max-width: 991px) {
+    .div-81 {
+      max-width: 100%;
+      margin: 40px 8px 0 0;
+    }
+  }
+  .div-82 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-82 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column-13 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 37%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column-13 {
+      width: 100%;
+    }
+  }
+  .div-83 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-83 {
+      margin-top: 40px;
+    }
+  }
+  .div-84 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    width: 82px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .img-12 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .div-85 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    margin-top: 14px;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  .div-86 {
+    color: #2a3342;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.44856rem;
+    font-weight: 700;
+    line-height: 133.333%;
+  }
+  .div-87 {
+    color: #666;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 0.95125rem;
+    font-weight: 400;
+    line-height: 150%;
+    align-self: center;
+    margin-top: 14px;
+    max-width: 285px;
+  }
+  .column-14 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 30%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-14 {
+      width: 100%;
+    }
+  }
+  .div-88 {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-88 {
+      margin-top: 40px;
+    }
+  }
+  .div-89 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    width: 82px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .img-13 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .div-90 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    margin-top: 20px;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  .div-91 {
+    color: #2a3342;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.44856rem;
+    font-weight: 700;
+    line-height: 133.333%;
+  }
+  .div-92 {
+    color: #666;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 0.95125rem;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 14px;
+  }
+  .column-15 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-15 {
+      width: 100%;
+    }
+  }
+  .div-93 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-93 {
+      margin-top: 40px;
+    }
+  }
+  .div-94 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    width: 81px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .img-14 {
+    aspect-ratio: 0.99;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .div-95 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    margin-top: 14px;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  .div-96 {
+    color: #2a3342;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.44856rem;
+    font-weight: 700;
+    line-height: 133.333%;
+  }
+  .div-97 {
+    color: #666;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 0.95125rem;
+    font-weight: 400;
+    line-height: 150%;
+    align-self: center;
+    margin-top: 14px;
+    max-width: 285px;
+  }
+
+
+
+
+  .div-112 {
+      align-self: stretch;
+      display: flex;
+      margin-top: 189px;
+      width: 100%;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-112 {
+        max-width: 100%;
+      }
+    }
+    .div-113 {
+      align-items: center;
+      align-self: stretch;
+      display: flex;
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-113 {
+        max-width: 100%;
+      }
+    }
+    .div-114 {
+      color: var(--gray-700, #272d37);
+      text-align: center;
+      font-family: Inter, sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: -0.64px;
+      align-self: center;
+      width: 800px;
+      max-width: 100%;
+    }
+    .div-115 {
+      align-items: center;
+      background-color: var(--base-white, #fff);
+      align-self: stretch;
+      display: flex;
+      margin-right: -20px;
+      width: 100%;
+      padding-top: 40px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+      padding-left: 20px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-115 {
+        max-width: 100%;
+      }
+    }
+    .div-116 {
+      align-self: center;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      width: 100%;
+      max-width: 1216px;
+    }
+    @media (max-width: 991px) {
+      .div-116 {
+        max-width: 100%;
+      }
+    }
+    .div-117 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-117 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-21 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 71%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-21 {
+        width: 100%;
+      }
+    }
+    .div-118 {
+      align-items: flex-start;
+      border-radius: 8px;
+      background-color: var(--base-white, #fff);
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      flex-grow: 1;
+      padding-top: 32px;
+      padding-right: 20px;
+      padding-bottom: 32px;
+      padding-left: 20px;
+      flex-direction: column;
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      .div-118 {
+        max-width: 100%;
+        margin-top: 48px;
+      }
+    }
+    .div-119 {
+      align-self: stretch;
+      display: flex;
+      margin-left: 12px;
+      margin-right: 12px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-119 {
+        max-width: 100%;
+        margin-right: 10px;
+      }
+    }
+    .div-120 {
+      align-items: flex-start;
+      align-self: start;
+      display: flex;
+      width: 763px;
+      max-width: 100%;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    @media (max-width: 991px) {
+      .div-120 {
+        flex-wrap: wrap;
+      }
+    }
+    .div-121 {
+      align-items: flex-start;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: auto;
+      width: 370px;
+    }
+    .div-122 {
+      align-self: stretch;
+      color: var(--gray-700, #272d37);
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 142.86%;
+      letter-spacing: -0.1px;
+      width: 100%;
+    }
+    .div-123 {
+      color: var(--gray-25, #919ba7);
+      font-family: Inter, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 146.67%;
+      letter-spacing: -0.1px;
+      align-self: stretch;
+      width: 100%;
+      align-items: center;
+      border-radius: 6px;
+      border: 1px solid var(--neutral-700, #dae0e6);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+      background-color: var(--base-white, #fff);
+      margin-top: 8px;
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+    }
+    .div-124 {
+      align-items: flex-start;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: auto;
+      width: 369px;
+    }
+    .div-125 {
+      align-self: stretch;
+      color: var(--gray-700, #272d37);
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 142.86%;
+      letter-spacing: -0.1px;
+      width: 100%;
+    }
+    .div-126 {
+      color: var(--gray-25, #919ba7);
+      font-family: Inter, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 146.67%;
+      letter-spacing: -0.1px;
+      align-self: stretch;
+      width: 100%;
+      align-items: center;
+      border-radius: 6px;
+      border: 1px solid var(--neutral-700, #dae0e6);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+      background-color: var(--base-white, #fff);
+      margin-top: 8px;
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+    }
+    .div-127 {
+      align-items: flex-start;
+      align-self: start;
+      display: flex;
+      margin-top: 24px;
+      width: 763px;
+      max-width: 100%;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    @media (max-width: 991px) {
+      .div-127 {
+        flex-wrap: wrap;
+      }
+    }
+    .div-128 {
+      align-items: flex-start;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: auto;
+      width: 370px;
+    }
+    .div-129 {
+      align-self: stretch;
+      color: var(--gray-700, #272d37);
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 142.86%;
+      letter-spacing: -0.1px;
+      width: 100%;
+    }
+    .div-130 {
+      color: var(--gray-25, #919ba7);
+      font-family: Inter, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 146.67%;
+      letter-spacing: -0.1px;
+      align-self: stretch;
+      width: 100%;
+      align-items: center;
+      border-radius: 6px;
+      border: 1px solid var(--neutral-700, #dae0e6);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+      background-color: var(--base-white, #fff);
+      margin-top: 8px;
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+    }
+    .div-131 {
+      justify-content: flex-end;
+      align-items: flex-start;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-132 {
+      color: var(--gray-700, #272d37);
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 142.86%;
+      letter-spacing: -0.1px;
+      align-self: start;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-132 {
+        text-wrap: initial;
+      }
+    }
+    .div-133 {
+      color: var(--gray-25, #919ba7);
+      font-family: Inter, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 146.67%;
+      letter-spacing: -0.1px;
+      align-self: start;
+      width: 369px;
+      align-items: center;
+      border-radius: 5px;
+      border: 1px solid var(--neutral-700, #dae0e6);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+      background-color: var(--base-white, #fff);
+      margin-top: 8px;
+      max-width: 100%;
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+    }
+    .div-134 {
+      align-items: flex-start;
+      align-self: start;
+      display: flex;
+      margin-top: 24px;
+      width: 763px;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    .div-135 {
+      align-self: stretch;
+      color: var(--gray-700, #272d37);
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 142.86%;
+      letter-spacing: -0.1px;
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      .div-135 {
+        max-width: 100%;
+      }
+    }
+    .div-136 {
+      color: var(--gray-25, #919ba7);
+      font-family: Inter, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 146.67%;
+      letter-spacing: -0.1px;
+      align-self: stretch;
+      width: 100%;
+      align-items: flex-start;
+      border-radius: 6px;
+      border: 1px solid var(--neutral-700, #dae0e6);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+      background-color: var(--base-white, #fff);
+      margin-top: 8px;
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-right: 16px;
+      padding-bottom: 127px;
+      padding-left: 16px;
+    }
+    @media (max-width: 991px) {
+      .div-136 {
+        max-width: 100%;
+      }
+    }
+    .div-137 {
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: #2770fe;
+      align-self: start;
+      display: flex;
+      margin-top: 24px;
+      width: 179px;
+      max-width: 100%;
+      flex-grow: 1;
+      padding-top: 12px;
+      padding-right: 20px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      flex-direction: column;
+      border: none;
+    }
+    .div-138 {
+      color: #fff;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      align-self: center;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-138 {
+        text-wrap: initial;
+      }
+    }
+    .column-22 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 29%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-22 {
+        width: 100%;
+      }
+    }
+    .div-139 {
+      justify-content: center;
+      align-items: flex-end;
+      display: flex;
+      margin-top: 44px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-139 {
+        margin-top: 50px;
+      }
+    }
+    .div-140 {
+      align-items: center;
+      align-self: start;
+      display: flex;
+      width: 341px;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    .div-141 {
+      align-self: stretch;
+      color: var(--gray-700, #272d37);
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 155.56%;
+      letter-spacing: -0.1px;
+      width: 100%;
+    }
+    .div-142 {
+      align-self: stretch;
+      color: var(--gray-50, #5f6d7e);
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.1px;
+      margin-top: 16px;
+      width: 100%;
+    }
+    .div-143 {
+      color: var(--gray-700, #272d37);
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 155.56%;
+      letter-spacing: -0.1px;
+      align-self: start;
+      margin-top: 29px;
+      width: 328px;
+      max-width: 100%;
+    }
+    .div-144 {
+      color: var(--gray-50, #5f6d7e);
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.1px;
+      align-self: start;
+      margin-top: 20px;
+      width: 328px;
+      max-width: 100%;
+    }
+    .div-145 {
+      color: var(--gray-50, #5f6d7e);
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: -0.1px;
+      align-self: start;
+      margin-top: 10px;
+      width: 328px;
+      max-width: 100%;
+    }
+    .div-146 {
+      justify-content: center;
+      align-items: flex-start;
+      border-radius: 5px;
+      align-self: start;
+      display: flex;
+      margin-top: 57px;
+      width: 128px;
+      max-width: 100%;
+      gap: 6px;
+    }
+    .img-17 {
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: center;
+      width: 20px;
+      overflow: hidden;
+      margin-top: 1px;
+    }
+    .div-147 {
+      color: var(--primary-600, #437ef7);
+      font-family: Inter, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 146.67%;
+      align-self: stretch;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-147 {
+        text-wrap: initial;
+      }
+    }
+    .div-148 {
+      justify-content: center;
+      align-items: flex-start;
+      border-radius: 5px;
+      align-self: start;
+      display: flex;
+      margin-top: 18px;
+      width: 156px;
+      max-width: 100%;
+      gap: 6px;
+    }
+    .img-18 {
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: center;
+      width: 20px;
+      overflow: hidden;
+      margin-top: 1px;
+    }
+    .div-149 {
+      color: var(--primary-600, #437ef7);
+      font-family: Inter, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 146.67%;
+      align-self: stretch;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-149 {
+        text-wrap: initial;
+      }
+    }
+    .div-150 {
+      background-color: #1c1c1c;
+      align-self: stretch;
+      display: flex;
+      margin-top: 59px;
+      width: 100%;
+      padding-top: 40px;
+      padding-right: 20px;
+      padding-bottom: 25px;
+      padding-left: 20px;
+      flex-direction: column;
+      height: 66vh;
+    }
+    @media (max-width: 991px) {
+      .div-150 {
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+    .div-151 {
+      align-self: center;
+      display: flex;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 1278px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-151 {
+        max-width: 100%;
+      }
+    }
+    .div-152 {
+      align-self: center;
+      display: flex;
+      width: 100%;
+      max-width: 1240px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-152 {
+        max-width: 100%;
+      }
+    }
+    .div-153 {
+      align-self: center;
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      .div-153 {
+        max-width: 100%;
+      }
+    }
+    .div-154 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-154 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-23 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 28%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-23 {
+        width: 100%;
+      }
+    }
+    .div-155 {
+      color: #f7f7f7;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      opacity: 0.88;
+      margin-top: auto;
+      margin-bottom: auto;
+      max-width: 263px;
+    }
+    @media (max-width: 991px) {
+      .div-155 {
+        margin-top: 50px;
+      }
+    }
+    .column-24 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 37%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-24 {
+        width: 100%;
+      }
+    }
+    .div-156 {
+      display: flex;
+      margin-top: 1px;
+      width: 300px;
+      max-width: 100%;
+      flex-grow: 1;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    @media (max-width: 991px) {
+      .div-156 {
+        margin-top: 50px;
+      }
+    }
+    .div-157 {
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+    }
+    .div-158 {
+      color: #fff;
+      font-family: Poppins, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 133.33%;
+      align-self: start;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-158 {
+        text-wrap: initial;
+      }
+    }
+    .div-159 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 40px;
+      width: 112px;
+    }
+    .div-160 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 21px;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-160 {
+        text-wrap: initial;
+      }
+    }
+    .div-161 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 22px;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-161 {
+        text-wrap: initial;
+      }
+    }
+    .div-162 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 22px;
+      width: 131px;
+    }
+    .div-163 {
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+    }
+    .div-164 {
+      color: #fff;
+      font-family: Poppins, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 133.33%;
+      align-self: start;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-164 {
+        text-wrap: initial;
+      }
+    }
+    .div-165 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 35px;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-165 {
+        text-wrap: initial;
+      }
+    }
+    .div-166 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 22px;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-166 {
+        text-wrap: initial;
+      }
+    }
+    .div-167 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 23px;
+      text-wrap: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-167 {
+        text-wrap: initial;
+      }
+    }
+    .div-168 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      align-self: start;
+      margin-top: 22px;
+      width: 114px;
+    }
+    .column-25 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 35%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-25 {
+        width: 100%;
+        margin-left: -10px;
+      }
+    }
+    .div-169 {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-169 {
+        margin-top: 50px;
+      }
+    }
+    .div-170 {
+      color: #dedede;
+      font-family: Poppins, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 142.86%;
+      align-self: start;
+      max-width: 317px;
+    }
+    .div-171 {
+      align-self: start;
+      display: flex;
+      margin-top: 13px;
+      width: 364px;
+      max-width: 100%;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .div-172 {
+      color: #303030;
+      font-family: Space Grotesk, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 160%;
+      align-self: stretch;
+      width: 302px;
+      background-color: var(--bg-color, #f9f9f9);
+      max-width: 100%;
+      padding-top: 18px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 15px;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .img-19 {
+      aspect-ratio: 0.98;
+      object-fit: cover;
+      object-position: center;
+      width: 4rem;
+      overflow: hidden;
+    }
+    .div-173 {
+      color: #fff;
+      font-family: Space Grotesk, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 116.67%;
+      letter-spacing: 0.48px;
+      align-self: start;
+      margin-bottom: 21px;
+    }
+    .img-20 {
+      aspect-ratio: 4.04;
+      object-fit: cover;
+      object-position: center;
+      width: 109px;
+      overflow: hidden;
+      align-self: start;
+      margin-bottom: 32px;
+    }
+    .div-174 {
+      align-self: center;
+      display: flex;
+      margin-top: -12px;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    @media (max-width: 991px) {
+      .div-173{margin-top: 3vh;}
+      .div-174 {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    .div-175 {
+      color: rgba(255, 255, 255, 0.8);
+      font-family: Poppins, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 116.67%;
+      align-self: start;
+      max-width: 348px;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-176 {
+      color: rgba(255, 255, 255, 0.8);
+      text-align: right;
+      font-family: Space Grotesk, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 116.67%;
+      align-self: start;
+      width: 145px;}
+  a{text-decoration: none;
+  color: #070622;}
+
+
+
+/* Basic styles for the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+  padding: 10px 20px;
+  color: #181212;
+  height: 14vh;
+  font-size: 1.4rem;
+  
+
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:black;
+}
+
+/* Style for the mobile menu icon */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #e0dcdc;
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+
+  .menu-toggle {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .menu-toggle.open {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+  #z{margin-left: 2.4rem;}
+  nav{display: inline-flex;
+padding: 6px 14px;
+align-items: flex-end;
+margin-left: -3.5rem;}
+}
+
+
+
+
+  
+</style>
+<body>
+<!----
+    <div class="div">
+      <div class="div-2">
+        <div class="div-3">
+          <div class="div-4">
+            <img
+              loading="lazy"
+              srcset="/img/Group%20239223%20(1).svg"
+              class="img"
+            />
+            <div class="div-5">
+              <div class="div-6"><a href="demo.html">Home</a></div>
+              <div class="div-7">About us</div>
+              <div class="div-8">Services</div>
+              <div class="div-9">Contact Us</div>
+            </div>
+            <div class="div-10">Talk to an expert</div>
+          </div>
+        </div>-->
+        <nav>
+          <img
+          loading="lazy"
+          srcset="/img/Group%20239223%20(1).svg"style="margin-left:3rem;"
+          class="img"
+        />
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="market.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          <a href="contact.html"><button id="z"class="btn btn bg-dark"style="color:white;margin-right:3rem;">Talk to an expert</button></a>
+            <div class="menu-toggle">☰</div>
+          </nav>
+
+
+        <div class="div-11">
+          <div class="div-12">
+            <span style="color: rgba(79, 192, 255, 1)">Performance Marketing</span>
+            <span style="color: rgba(39, 39, 66, 1)"></span>
+            <span style="color: rgba(255, 255, 255, 1)">at Ibizo Technologies</span>
+          </div>
+          <div class="div-13">
+            Welcome to Ibizo Technologies, where we redefine digital marketing
+            through a cutting-edge approach known as performance marketing. Our
+            mission is simple yet powerful: to help you achieve outstanding results
+            by connecting your brand with the right audience, at the right time, and
+            in the right way.
+          </div>
+          <div class="div-14">
+            <input class="div-15"type="email" id="lemail" name="Email" placeholder="    Enter Mail ID"style="height:4.3rem;width: 52rem;">
+            <a href="contact.html">
+            <div class="div-16">Talk to expert</div></a>
+          </div>
+        </div>
+        <div class="div-17">
+          <div class="div-18">
+            <div class="column">
+              <div class="div-19">
+                <div class="div-20">What is Performance Marketing?</div>
+                <div class="div-21">
+                  Performance marketing is not just a buzzword; it's a game-changer
+                  in the digital marketing landscape. At Ibizo Technologies, we've
+                  perfected this data-driven approach to elevate your brand's online
+                  presence and drive tangible outcomes.
+                </div>
+              </div>
+            </div>
+            <div class="column-2">
+              <img
+                loading="lazy"
+                srcset="/img/Business%20growth%20or%20career%20ladder.svg"
+                class="img-2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-22">
+        <div class="div-23">
+          <div class="div-24">
+            <div class="div-25">
+              <div class="div-26">Our Comprehensive Services</div>
+              <div class="div-27">
+                Beyond budgeting options, Ibizo Technologies offers a full spectrum
+                of services to supercharge your digital marketing efforts:
+              </div>
+            </div>
+            <div class="div-28">
+              <div class="div-29">
+                <div class="column-3">
+                  <div class="div-30">
+                    <div class="div-31">
+                      <div class="div-32">
+                        <img
+                          loading="lazy"
+                          srcset="/img/Frame%201686551722.svg"style="width:5.3rem;"
+                          class="img-3"
+                        />
+                      </div>
+                      <div class="div-33">
+                        <div class="div-34">Search Engine Marketing (SEM)</div>
+                        <div class="div-35">
+                          We harness the power of search engines to ensure your
+                          brand is discovered by those actively looking for your
+                          products or services.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div-36">
+                      <div class="div-37">
+                        <div class="column-4">
+                          <div class="div-38">
+                            <img
+                              loading="lazy"
+                              srcset="/img/Frame%201686551723.svg"style="width:5.5rem;"
+                              class="img-4"
+                            />
+                          </div>
+                        </div>
+                        <div class="column-5">
+                          <div class="div-39">
+                            <div class="div-40">Social Media Advertising</div>
+                            <div class="div-41">
+                              Our social media experts craft compelling ad campaigns
+                              that engage your audience and drive conversions on
+                              platforms like Facebook, Instagram, and LinkedIn.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column-6">
+                  <div class="div-42">
+                    <div class="div-43">
+                      <div class="div-44">
+                        <img
+                          loading="lazy"
+                          srcset="/img/Frame%201686551724.svg"style="width:5.5rem;"
+                          class="img-5"
+                        />
+                      </div>
+                      <div class="div-45">
+                        <div class="div-46">Display Advertising</div>
+                        <div class="div-47">
+                          Maximize your brand's visibility with visually stunning
+                          display ads that capture attention and convert prospects
+                          into customers.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div-48">
+                      <div class="div-49">
+                        <div class="column-7">
+                          <div class="div-50">
+                            <img
+                              loading="lazy"
+                              srcset="/img/Frame%201686551725.svg"style="width:5rem;"
+                              class="img-6"
+                            />
+                          </div>
+                        </div>
+                        <div class="column-8">
+                          <div class="div-51">
+                            <div class="div-52">Email Marketing</div>
+                            <div class="div-53">
+                              Nurture your customer relationships and drive sales
+                              through targeted email campaigns that deliver the
+                              right message at the right time.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-54">
+            <img
+              loading="lazy"
+              srcset="/img/Group%2039181.svg"
+              class="img-7"
+            />
+            <div class="div-55">
+              <div class="div-56">
+                <div class="div-57">Our Unique Approach to Budgeting</div>
+                <div class="div-58">
+                  At Ibizo Technologies, we understand that every business has
+                  unique financial considerations. That's why we offer flexible
+                  payment options that put you in control.
+                </div>
+              </div>
+              <br>
+              <br>
+              <img
+                loading="lazy"
+                srcset="/img/Graphic%20designer%20creating%20artwork.svg"
+                class="img-8"
+              />
+            </div>
+            <div class="div-59">
+              <div class="div-60">
+                <div class="div-61">
+                  <div class="column-9">
+                    <div class="div-62">
+                      <img
+                        loading="lazy"
+                        srcset="/img/Frame%201686551753.svg"style="width:4.5rem;"
+                        class="img-9"
+                      />
+                    </div>
+                  </div>
+                  <div class="column-10">
+                    <div class="div-63">
+                      <div class="div-64">Prepayment of Ad Budget</div>
+                      <div class="div-65">
+                        Many of our clients opt for the prepayment model, where you
+                        allocate a specific budget for your advertising campaigns.
+                        This upfront payment allows us to leverage your resources
+                        efficiently, ensuring every dollar is spent strategically to
+                        achieve your goals.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-66">
+                <div class="div-67">
+                  <div class="column-11">
+                    <div class="div-68">
+                      <img
+                        loading="lazy"
+                        srcset="/img/Frame%201686551754.svg"style="width:4.5rem;"
+                        class="img-10"
+                      />
+                    </div>
+                  </div>
+                  <div class="column-12">
+                    <div class="div-69">
+                      <div class="div-70">Retainer-ship Fee</div>
+                      <div class="div-71">
+                        For clients seeking ongoing marketing support and
+                        consultation, we offer a retainer ship fee arrangement. With
+                        this option, you benefit from dedicated access to our
+                        expertise and insights throughout your campaign, ensuring
+                        your strategies remain agile and adaptable.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              
+              <div class="div-72">
+                <div class="div-73">
+                  <img
+                    loading="lazy"
+                    srcset="/img/Frame%201686551755%20(1).svg"style="width:4.5rem;"
+                    class="img-11"
+                  />
+              
+                </div>
+                <br>
+                <div class="div-74">
+                  <div class="div-75">15% of Ad Budget</div>
+                  <div class="div-76">
+                    Alternatively, you can choose to pay a commission of 15% on your
+                    ad spend. This model aligns our success with yours – the more
+                    effective your campaigns, the more value we bring to your
+                    business.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-77">
+            <div class="div-78">
+              <div class="div-79">Why Choose Ibizo Technologies?</div>
+              <div class="div-80">
+                Beyond budgeting options, Ibizo Technologies offers a full spectrum
+                of services to supercharge your digital marketing efforts:
+              </div>
+            </div>
+            <div class="div-81">
+              <div class="div-82">
+                <div class="column-13">
+                  <div class="div-83">
+                    <div class="div-84">
+                      <img
+                        loading="lazy"
+                        srcset="/img/Frame%201686551753.svg"
+                        class="img-12"
+                      />
+                    </div>
+                    <div class="div-85">
+                      <div class="div-86">Proven Success</div>
+                      <div class="div-87">
+                        Our track record speaks for itself. We've helped countless
+                        clients achieve remarkable results through performance
+                        marketing.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column-14">
+                  <div class="div-88">
+                    <div class="div-89">
+                      <img
+                        loading="lazy"
+                        srcset="/img/Frame%201686551754.svg"
+                        class="img-13"
+                      />
+                    </div>
+                    <div class="div-90">
+                      <div class="div-91">Transparent Reporting</div>
+                      <div class="div-92">
+                        You'll have complete visibility into your campaign's
+                        performance. We provide detailed reports and insights, so
+                        you know exactly how your budget is being utilized.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column-15">
+                  <div class="div-93">
+                    <div class="div-94">
+                      <img
+                        loading="lazy"
+                        srcset="/img/Frame%201686551755.svg"
+                        class="img-14"
+                      />
+                    </div>
+                    <div class="div-95">
+                      <div class="div-96">Tailored Solutions</div>
+                      <div class="div-97">
+                        We understand that one size does not fit all. Our strategies
+                        are customised to meet your unique business objectives and
+                        market dynamics.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-112">
+            <div class="div-113">
+              <div class="div-114">Let’s Get Connected</div>
+              <div class="div-115">
+                <div class="div-116">
+                  <div class="div-117">
+                    <div class="column-21">
+                      <form class="form-data">
+                      <div class="div-118">
+                        <div class="div-119">
+                          <div class="div-120">
+                            <div class="div-121">
+
+                              <label class="div-122" for="fname">First Name</label>
+                              
+  
+                              <input class="div-123" type="text" id="fname" name="Fristname" placeholder="Please input"required>
+                          </div>
+                            
+                            <div class="div-124">
+                              <lable class="div-125">Email address</lable>
+                              <input class="div-126"type="email" id="email" name="Email" placeholder="Please input"required>
+                            </div>
+                          </div>
+                          <div class="div-127">
+                            <div class="div-128">
+                              <lable class="div-129">Phone Number</lable>
+                              <input class="div-130"type="number" id="phone" name="phone" placeholder="+91"required>
+                            </div>
+                            <div class="div-131">
+                              <lable class="div-132">Location</lable>
+                              <input class="div-133"type="text" id="loc" name="Location" placeholder="Please input">
+                            </div>
+                          </div>
+                          <div class="div-134">
+                            <lable class="div-135">Message</lable>
+                            <textarea class="div-136" id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                          </div>
+                        <button type="submit" class="div-137"><div class="div-138">Submit</div></button>
+                        </div>
+                      </div>
+                    </div>
+                    </form>
+                    <div class="column-22">
+                      <div class="div-139">
+                        <div class="div-140">
+                          <div class="div-141">Get in touch</div>
+                          <div class="div-142">
+                            We’d Love to Hear From You! Reach Out to us and Let’s Start
+                            a Conversation
+                          </div>
+                        </div>
+                        <div class="div-143">Address</div>
+                        <div class="div-144">GF, A - 16, Noida</div>
+                        <div class="div-145">Uttar Pradesh 201301</div>
+                        <div class="div-146">
+                          <img
+                            loading="lazy"
+                            srcset="/img/mail.svg"
+                            class="img-17"
+                          />
+                          <div class="div-147"><a href="https://www.signalhire.com/companies/ibizo-technologies/email-format">Send an email</a></div>
+                        </div>
+                        <div class="div-148">
+                          <img
+                            loading="lazy"
+                            srcset="/img/phone.svg"
+                            class="img-18"
+                          />
+                          <div class="div-149"><a href="+919708770877">Make a phone call</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-150">
+              <div class="div-151">
+                <div class="div-152">
+                  <div class="div-153">
+                    <div class="div-154">
+                      <div class="column-23">
+                        <img
+                        loading="lazy"
+                        srcset="/img/Group%20239222%202%201.svg"style="width:100px;"
+                        class="img-31"
+                      />
+
+                        <div class="div-155">
+                          Powering growth in digital
+                          <br />
+                          industry
+                        </div>
+                      </div>
+                      <div class="column-24">
+                        <div class="div-156">
+                          <div class="div-157">
+                            <div class="div-158">Home</div>
+                            <div class="div-159">Name</div>
+                            <div class="div-160">About</div>
+                            <div class="div-161"> Service</div>
+                            <div class="div-162">Partner</div>
+                            <div class="div-162">FAQ</div>
+                          </div>
+                          <div class="div-163">
+                            <div class="div-164">Contact</div>
+                            <div class="div-165">Contact us</div>
+                            <div class="div-166">Location</div>
+                                          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column-25">
+                        <div class="div-169">
+                          <div class="div-170">
+                            Want to know more about us!!!! Let’s connect
+                          </div>
+                          <div class="div-171">
+                      
+                            <a href="contact.html">
+                            <img
+                              loading="lazy"
+                              srcset="/img/go.svg"
+                              class="img-19"
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="div-173">GET IN TOUCH</div>
+                  <img
+                    loading="lazy"
+                    srcset="/img/icon%20(2).svg"
+                    class="img-20"
+                  />
+                </div>
+                <div class="div-174">
+                  <div class="div-175">
+                    @2023 Ibizo Technologies. All rights reserved.
+                  </div>
+                  <div class="div-176">Partner & Contribute</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+<!---- Add this script below the HTML body to toggle the mobile menu-->
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    menuToggle.classList.toggle("open");
+  });
+
+
+  </script>
+  <script>
+    const form = document.querySelector('.form-data');
+    
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission behavior
+  
+        const fname = document.getElementById('fname').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const loc = document.getElementById('loc').value;
+        const message = document.getElementById('message').value;
+  
+        console.log("Form submitted");
+        console.log("First Name: " + fname);
+        console.log("Email: " + email);
+        console.log("Phone: " + phone);
+        console.log("Location: " + loc);
+        console.log("Message: " + message);
+  
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "contact@ibizo.com",
+            Password : "E0F13B14C4902D117A5D92744E63BAF704AD",
+            To : 'contact@ibizo.in',
+            From : "contact@ibizo.in",
+            Subject : "Contact Form Submission",
+            Body : `First Name: ${fname}<br>Email: ${email}<br>Phone: ${phone}<br>Location: ${loc}<br>Message: ${message}`
+        }).then(function(response) {
+          alert('message sent')
+            document.getElementById("status").textContent = "Email sent successfully.";
+        }).catch(function(error) {
+          alert('All fiels manadatory')
+            document.getElementById("status").textContent = "Error sending the email: " + error;
+        });
+    });
+  </script>
+  </body>
+  </html>
+  
